@@ -1,5 +1,7 @@
 # prevail_availability_test
 
+## Create project istio-system
+oc new-project istio-system</br>
 ## Openshift operators installation
 Openshift jaeger </br>
 Kiali </br>
