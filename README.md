@@ -8,11 +8,11 @@ Openshift Service Mesh
 
 
 ## bookinfo namespace and application deployment
-oc new-project bookinfo
-oc apply -f https://raw.githubusercontent.com/Maistra/istio/maistra-2.0/samples/bookinfo/platform/kube/bookinfo.yaml
-oc get pods
-oc create -f https://raw.githubusercontent.com/Maistra/istio/maistra-2.0/samples/bookinfo/networking/bookinfo-gateway.yaml
-oc get routes -n istio-system istio-ingressgateway
+oc new-project bookinfo </br>
+oc apply -f https://raw.githubusercontent.com/Maistra/istio/maistra-2.0/samples/bookinfo/platform/kube/bookinfo.yaml </br>
+oc get pods </br>
+oc create -f https://raw.githubusercontent.com/Maistra/istio/maistra-2.0/samples/bookinfo/networking/bookinfo-gateway.yaml </br>
+oc get routes -n istio-system istio-ingressgateway </br>
 
 ## exporting the hostname
 export INGRESS_HOST=<HOST>
