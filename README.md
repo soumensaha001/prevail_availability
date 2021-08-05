@@ -1,5 +1,7 @@
 # prevail_availability_test
 
+Clone this repo.
+cd prevail_availability
 ## Create project istio-system
 oc new-project istio-system</br>
 ![image](https://user-images.githubusercontent.com/45451838/128295909-b2ea9da1-c76e-4dff-8311-7513c3e48449.png)
