@@ -67,3 +67,6 @@ http://{INGRESS_HOST}/productpage </br>
 ![image](https://user-images.githubusercontent.com/45451838/128295542-00ae1107-c424-4e1e-be91-a06032a784a2.png)
 
 ![image](https://user-images.githubusercontent.com/45451838/128295522-46591c5c-3a7e-4131-a970-100a6ee9472c.png)
+![image](https://user-images.githubusercontent.com/45451838/128300134-581cc5af-cea3-45c5-ab94-4649d9fde915.png)
+![image](https://user-images.githubusercontent.com/45451838/128300198-ac581406-cced-4d25-a46c-5b515659a3cf.png)
+
