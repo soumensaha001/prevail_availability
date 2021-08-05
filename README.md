@@ -8,6 +8,19 @@ Kiali </br>
 Red Hat Elasticsearch</br>
 Openshift Service Mesh</br>
 
+## Configure Openshift Service Mesh Control Plane to create a sidecar system which will track the cluster microservices
+
+## Configure Openshift Service Mesh Member Rolls by using below yaml (in this example bookinfo app has been used)
+'''
+apiVersion: maistra.io/v1
+kind: ServiceMeshMemberRoll
+metadata:
+  name: default
+  namespace: istio-system
+spec:
+  members:
+    - bookinfo
+'''
 
 ## bookinfo namespace and application deployment
 oc new-project bookinfo </br>
