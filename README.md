@@ -1,10 +1,10 @@
 # prevail_availability_test
 
 ## Openshift operators installation
-Openshift jaeger
-Kiali
-Red Hat Elasticsearch
-Openshift Service Mesh
+Openshift jaeger </br>
+Kiali </br>
+Red Hat Elasticsearch</br>
+Openshift Service Mesh</br>
 
 
 ## bookinfo namespace and application deployment
@@ -15,23 +15,23 @@ oc create -f https://raw.githubusercontent.com/Maistra/istio/maistra-2.0/samples
 oc get routes -n istio-system istio-ingressgateway </br>
 
 ## exporting the hostname
-export INGRESS_HOST= '<HOST>'
+export INGRESS_HOST= 'HOST'</br>
 
-fake traffic generation</br>
-for i in {1..20}; do sleep 0.5; curl -I $INGRESS_HOST/productpage; done
+## fake traffic generation</br>
+for i in {1..20}; do sleep 0.5; curl -I $INGRESS_HOST/productpage; done</br>
 
-//install chaostoolkit </br>
-source ~/.venvs/chaostk/bin/activate
-python3 -m venv ~/.venvs/chaostk
-pip install -U chaostoolkit
-chaos --help
+## install chaostoolkit </br>
+source ~/.venvs/chaostk/bin/activate</br>
+python3 -m venv ~/.venvs/chaostk</br>
+pip install -U chaostoolkit</br>
+chaos --help</br>
 
-//install chaos toolkit kubernetes extension </br>
+## install chaos toolkit kubernetes extension </br>
 
-pip install -U chaostoolkit-kubernetes
-chaos discover chaostoolkit-kubernetes
+pip install -U chaostoolkit-kubernetes</br>
+chaos discover chaostoolkit-kubernetes</br>
 
-//start kill experiments </br>
-chaos run chaos/terminate-pod.yaml
+## start killing application pods experiments </br>
+chaos run chaos/terminate-pod.yaml</br>
 
-Now go and check kiali, grafana, jaeger dashboards to analyse
+## Now go and check kiali, grafana, jaeger dashboards to analyse availability/ resiliency of the full system
