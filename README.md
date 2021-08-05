@@ -35,7 +35,6 @@ spec:
 oc new-project bookinfo </br>
 oc apply -f https://raw.githubusercontent.com/Maistra/istio/maistra-2.0/samples/bookinfo/platform/kube/bookinfo.yaml </br>
 oc get pods </br>
-oc create -f https://raw.githubusercontent.com/Maistra/istio/maistra-2.0/samples/bookinfo/networking/bookinfo-gateway.yaml </br>
 oc get routes -n istio-system istio-ingressgateway </br>
 
 ## exporting the hostname
@@ -43,7 +42,7 @@ export INGRESS_HOST= output from last command </br>
 ![image](https://user-images.githubusercontent.com/45451838/128295680-10b786d8-ec59-4a7f-9691-047f6d4b4d85.png)
 
 ![image](https://user-images.githubusercontent.com/45451838/128295673-f6f0075f-cb2a-4ea4-b7b6-45d708906ce0.png)
-
+oc create -f https://raw.githubusercontent.com/Maistra/istio/maistra-2.0/samples/bookinfo/networking/bookinfo-gateway.yaml </br>
 ## fake traffic generation
 for i in {1..20}; do sleep 0.5; curl -I $INGRESS_HOST/productpage; done</br>
 
